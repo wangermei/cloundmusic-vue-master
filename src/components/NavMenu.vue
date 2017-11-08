@@ -116,5 +116,6 @@ export default{
   }
   .login-btn{
     float: right;
+    font-size: 1.2rem;
   }
 </style>
