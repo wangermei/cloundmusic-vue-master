@@ -20,9 +20,12 @@
               active-text-color="#ffd04b">
               <el-submenu index="1" >
                 <template slot="title">发现音乐</template>
-                <el-menu-item index="1-1"><a href="https://www.ele.me" target="_blank">推荐</a></el-menu-item>
-                <el-menu-item index="1-2"><a href="https://www.ele.me" target="_blank">选项2</a></el-menu-item>
-                <el-menu-item index="1-3"><a href="https://www.ele.me" target="_blank">选项3</a></el-menu-item>
+                <el-menu-item index="1-1"><a @click="recommend">推荐</a></el-menu-item>
+                <el-menu-item index="1-2"><a href="https://www.ele.me" target="_blank">排行榜</a></el-menu-item>
+                <el-menu-item index="1-3"><a href="https://www.ele.me" target="_blank">歌单</a></el-menu-item>
+                <el-menu-item index="1-3"><a href="https://www.ele.me" target="_blank">主播电台</a></el-menu-item>
+                <el-menu-item index="1-3"><a href="https://www.ele.me" target="_blank">歌手</a></el-menu-item>
+                <el-menu-item index="1-3"><a href="https://www.ele.me" target="_blank">新碟上架</a></el-menu-item>
               </el-submenu>
               <el-menu-item index="2"><a href="https://www.ele.me" target="_blank">我的音乐</a></el-menu-item>
               <el-menu-item index="3"><a href="https://www.ele.me" target="_blank">朋友</a></el-menu-item>
@@ -53,9 +56,11 @@
                 active-text-color="#ffd04b">
                 <el-submenu index="1">
                   <template slot="title">登录</template>
-                  <el-menu-item index="1-1">选项1</el-menu-item>
-                  <el-menu-item index="1-2">选项2</el-menu-item>
-                  <el-menu-item index="1-3">选项3</el-menu-item>
+                  <el-menu-item index="1-1">手机号登录</el-menu-item>
+                  <el-menu-item index="1-1">QQ登录</el-menu-item>
+                  <el-menu-item index="1-2">微信登录</el-menu-item>
+                  <el-menu-item index="1-3">微博登录</el-menu-item>
+                  <el-menu-item index="1-3">网易邮箱号登录</el-menu-item>
                 </el-submenu>
               </el-menu>
             </div>
@@ -65,21 +70,35 @@
     </div>
 </template>
 <script>
+
 export default{
+  methods: {
+    handleSelect (key, keyPath) {
+      console.log(key, keyPath)
+    },
+    recommend () {
+      this.$router.push({ path: 'index' })
+    }
+  }
 }
 </script>
 <style>
   .el-menu{
-    display: block;
+    /*display: block!important;*/
+    /*background-color:transparent!important;*/
+    /*box-shadow: none!important;*/
+    /*-webkit-box-shadow: none;*/
+  }
+  .el-menu--horizontal .el-submenu .el-menu-item{
+    /*background-color: red!important;*/
+  }
+  .el-submenu .el-menu-item{
+    min-width: 90px;
   }
   .navMenu{
-    border:1px solid red;
     border-top: none;
     width: 1200px;
     margin: 0 auto;
-  }
-  .el-submenu .el-menu-item{
-    background-color: #C20C0C!important;
   }
   .search{
     height: 34px;

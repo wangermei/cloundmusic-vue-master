@@ -1,21 +1,21 @@
 {
-  "status": "1",
+  "status": "0",
   "result": [
     {
       "id": "1",
-      "url": "../../../assets/1.jpg"
+      "url": "http://localhost:3000/asset/1.jpg"
     },
     {
       "id": "2",
-      "url": "../../../assets/2.jpg"
+      "url": "./././assets/2.jpg"
     },
     {
       "id": "3",
-      "url": "../../../assets/3.jpg"
+      "url": "./././assets/3.jpg"
     },
     {
       "id": "4",
-      "url": "../../../assets/4.jpg"
+      "url": "./././assets/4.jpg"
     }
 ]
 }

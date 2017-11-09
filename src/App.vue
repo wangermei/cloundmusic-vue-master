@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <router-view/>
+     <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  export default {
+    name: 'app'
+  }
 </script>
 
 <style>
@@ -26,6 +26,7 @@ export default {
   body{
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
   }
   a{
     text-decoration: none;
