@@ -1,3 +1,4 @@
 export default {
-  bannerImgUrl: []
+  bannerImgUrl: [],
+  musicLists: []
 }

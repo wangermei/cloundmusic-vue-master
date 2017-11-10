@@ -8,7 +8,10 @@
     }],
     "stage-2"
   ],
-  "plugins": [["component", [
+//  "plugins": [
+//    "transform-runtime"
+//  ],
+  "plugins": [["transform-runtime", [
     {
       "libraryName": "element-ui",
       "styleLibraryName": "theme-chalk"

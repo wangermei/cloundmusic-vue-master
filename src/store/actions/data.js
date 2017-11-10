@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const getBanners = ({ commit }) => {
+export const getBanners = async ({ commit }) => {
   console.log(1)
   axios.get('http://localhost:3000/static/JSON/banner.json').then(response => {
     console.log(response.data.result)

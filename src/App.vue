@@ -31,4 +31,10 @@
   a{
     text-decoration: none;
   }
+  li{
+    list-style: none;
+  }
+  div{
+    overflow: hidden;
+  }
 </style>

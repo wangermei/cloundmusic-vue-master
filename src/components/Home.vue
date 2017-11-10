@@ -35,6 +35,7 @@
     color: #333;
     text-align: center;
     line-height: 60px;
+    padding:0;
   }
   .el-footer{
     border-top: 1px solid #d3d3d3;
@@ -48,6 +49,7 @@
     text-align: center;
     /*line-height: 160px;*/
     padding: 0;
+    margin-top: 40px;
   }
   h1, h2 {
     font-weight: normal;
@@ -59,7 +61,6 @@
   li {
     display: inline-block;
     margin: 0 10px;
-    list-style: none;
   }
   a {
     color: #42b983;
