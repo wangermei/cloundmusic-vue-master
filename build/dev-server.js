@@ -1,16 +1,18 @@
 'use strict'
+// npm和node版本检查
 require('./check-versions')()
 
 const config = require('../config')
+// 下面表示如果如果没有定义全局变量NODE_ENV，则将NODE_ENV设置为"development"
 if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
 }
 
-const opn = require('opn')
+const opn = require('opn')    // opn插件是用来打开特定终端的，此文件用来在默认浏览器中打开链接 opn(url)
 const path = require('path')
-const express = require('express')
+const express = require('express')   // nodejs开发框架express，用来简化操作，可以当做一个功能强大的http-server
 const webpack = require('webpack')
-const proxyMiddleware = require('http-proxy-middleware')
+const proxyMiddleware = require('http-proxy-middleware')   // http中间代理插件，此插件是用来代理请求的只能用于开发环境，目的主要是解决跨域请求后台api
 const webpackConfig = (process.env.NODE_ENV === 'testing' || process.env.NODE_ENV === 'production')
   ? require('./webpack.prod.conf')
   : require('./webpack.dev.conf')

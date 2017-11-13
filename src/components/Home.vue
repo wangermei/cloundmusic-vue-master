@@ -40,9 +40,11 @@
   .el-footer{
     border-top: 1px solid #d3d3d3;
     background-color: #f2f2f2;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 50px;
+
   }
   .el-main {
     color: #333;

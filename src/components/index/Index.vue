@@ -61,6 +61,7 @@
     background: #ffffff;
     border-left: 1px solid grey;
     border-right: 1px solid grey;
+    overflow: hidden;
   }
   .el-carousel__item img {
     color: #475669;

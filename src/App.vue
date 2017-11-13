@@ -30,11 +30,16 @@
   }
   a{
     text-decoration: none;
+    cursor: pointer;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
   }
   li{
     list-style: none;
   }
-  div{
-    overflow: hidden;
+  img{
+    width: 100%;
   }
 </style>
