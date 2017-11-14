@@ -18,7 +18,6 @@
   text-align: center;
   color: #2c3e50;
   width: 100%;
-  overflow: auto;
 }
  html{
    font-size: 62.5%;
@@ -34,12 +33,9 @@
   }
   ul{
     padding: 0;
-    margin: 0;
+    /*margin: 0;*/
   }
   li{
     list-style: none;
-  }
-  img{
-    width: 100%;
   }
 </style>

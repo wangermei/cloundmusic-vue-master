@@ -56,7 +56,7 @@
 .list-title{
   height: 30px;
   position: absolute;
-  top: 123px;
+  top: 120px;
   z-index: 100;
   width: 100%;
 }
@@ -72,7 +72,7 @@
   z-index: 120;
   position: absolute;
   top: 5px;
-  color: #fff;
+  color: #ccc;
   left: 0;
   padding-left: 10px;
   }
@@ -83,7 +83,7 @@
     padding: 1px;
   }
   .hot-text{
-    padding: 7px 0;
+    padding: 10px 0;
     font-size: 1.3rem;
     line-height: 18px;
   }

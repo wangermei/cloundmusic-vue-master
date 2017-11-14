@@ -1,9 +1,11 @@
 import {
   getBanners,
-  getMusicList
+  getMusicList,
+  getNewCard
 } from './data'
 
 export default {
   getBanners,
-  getMusicList
+  getMusicList,
+  getNewCard
 }

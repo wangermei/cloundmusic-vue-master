@@ -63,7 +63,6 @@
 <style>
 .hot-recommend{
   padding: 20px;
-  border: 1px solid red;
   overflow: hidden;
 }
 .hot-item{

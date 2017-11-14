@@ -13,10 +13,19 @@ export const getBanners = async ({ commit }) => {
 export const getMusicList = async ({ commit }) => {
   axios.get('http://localhost:3000/static/JSON/hotMusic.json').then(response => {
     if (response.data.status === '0') {
-      console.log(response.data)
+      // console.log(response.data)
       commit('UPDATE_HOT_RECOMMEND_LIST', response.data.musicList)
     } else {
       throw new Error('请求失败！')
+    }
+  })
+}
+// 首页获取新碟上架歌曲列表
+export const getNewCard = async ({commit}) => {
+  axios.get('http://localhost:3000/static/JSON/hotMusic.json').then(response => {
+    if (response.data.status === '0') {
+      console.log(response.data)
+      commit('UPDATE_NEW_CARD_LIST', response.data.newCardList)
     }
   })
 }

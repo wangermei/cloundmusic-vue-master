@@ -18,9 +18,10 @@
     <banner></banner>
     <div class="content">
       <el-row :gutter="20">
-        <el-col :span="16">
+        <el-col :span="16" style="border: 1px solid red;">
           <div class="grid-content bg-purple">
             <hot-recommend></hot-recommend>
+            <new-shelves></new-shelves>
           </div>
         </el-col>
         <el-col :span="8">
@@ -35,10 +36,12 @@
 <script>
   import banner from '../../components/Banner'
   import hotRecommend from './HotRecommend'
+  import newShelves from './NewShelves'
   export default{
     components: {
       banner,
-      hotRecommend
+      hotRecommend,
+      newShelves
     },
     methods: {
       async getBanners () {

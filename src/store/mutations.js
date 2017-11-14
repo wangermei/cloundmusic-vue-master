@@ -7,5 +7,8 @@ export default {
   },
   UPDATE_HOT_RECOMMEND_LIST: (state, musicList) => {
     state.musicLists = musicList
+  },
+  UPDATE_NEW_CARD_LIST: (state, info) => {
+    state.newCardLists = info
   }
 }

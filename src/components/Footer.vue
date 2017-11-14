@@ -21,9 +21,9 @@
         <div class="grid-content bg-purple-light">
           <ul>
             <li><a href="" class="footer-icon"></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="" class="footer-icon f-icon2"></a></li>
+            <li><a href="" class="footer-icon f-icon3"></a></li>
+            <li><a href="" class="footer-icon f-icon4"></a></li>
           </ul>
         </div>
       </el-col>
@@ -35,8 +35,7 @@
 </script>
 <style>
 .footer{
-  padding: 20px 0;
-  border:1px solid red;
+  padding: 20px 0 0 0;
   width: 1200px;
   margin: 0 auto;
   text-align: left;
@@ -44,8 +43,40 @@
 .footer-icon{
   background: url("../assets/foot_enter.png") no-repeat;
   display: block;
-  width: 50px;
-  height: 50px;
-  background-position: 0px 0px;
+  width: 56px;
+  height: 70px;
+  background-position: 0 0;
   }
+.footer .bg-purple{
+  margin: 17px 0 0 0;
+}
+.footer .bg-purple ul li{
+  margin:0 5px;
+}
+.footer .bg-purple ul li a{
+  color: #999;
+}
+.footer .bg-purple ul li a:hover{
+  text-decoration: underline;
+}
+.footer .bg-purple p{
+  color: #666;
+  padding-left: 5px;
+}
+.footer .bg-purple-light{
+  text-align: right;
+  padding-right: 12px;
+}
+.footer .bg-purple-light ul li{
+  margin: 0 15px;
+}
+.f-icon2{
+  background-position: -60px 0;
+}
+.f-icon3{
+  background-position: 0 -79px;
+}
+.f-icon4{
+  background-position: -60px -79px;
+}
 </style>
