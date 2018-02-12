@@ -62,8 +62,8 @@
     border: 1px solid red;
     margin: 0 auto;
     background: #ffffff;
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
     overflow: hidden;
   }
   .el-carousel__item img {

@@ -109,6 +109,9 @@ export default{
     font-size: 1.4rem;
     color: #ffffff;
   }
+  .drawDownMenu .el-row a:hover{
+    color: #f5f5f5;
+  }
   .menuSelected{
     background: url("././../assets/topbar.png") no-repeat;
     display: block;
